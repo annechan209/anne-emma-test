@@ -1,0 +1,269 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Dominic: Prison leaver
+{% endblock %}
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="/" class="govuk-back-link govuk-!-margin-bottom-0 govuk-!-margin-top-0">Back</a>
+
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+
+    <h1 class="govuk-panel__title title-colour-blue govuk-!-margin-bottom-4 govuk-!-margin-top-0">
+      Dominic: Prison leaver
+    </h1>
+
+    <div class="govuk-grid-row">
+      <!--image-->
+      <div class="govuk-grid-column-one-third">
+        <img src="{{ asset_path }}images/Dominic.jpg" alt="">
+      </div>
+
+      <!--intro-->
+      <div class="govuk-grid-column-one-third">
+        <p class="persona-intro govuk-!-margin-top-4">"I'm coming to the end of my second term in prison.
+          <br><br>It was stressful when I was released last time; I applied for Universal Credit and everything had to
+          be lined up in that first
+          week, and it was still ages until my money came through. It seemed like such a hassle."
+        </p>
+      </div>
+      <!--slider-->
+
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-!-margin-top-5">
+          <!-- <img src="{{ asset_path }}images/Dominic-summary.jpg"
+            alt="Sliders showing that for Dominic, online access and ID documents are at the lower end while help and advice needs when interacting online are at the higher end of the scale and Government records includes Prison records"
+            width="300" height="200"> -->
+            <img src="{{ asset_path }}images/Dom-summary.jpg"
+            alt="Sliders showing Dominic's online access and ID documents are low, help and advice needs are high while Government records include Prison records" app/assets/sass/application.scss :img {
+              max-width: 100% 
+            }
+              
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="govuk-grid-row">
+      <!--left column content-->
+      <div class="govuk-grid-column-one-half govuk-!-margin-top-4">
+        <h2 id="contents" class="govuk-heading-m govuk-!-margin-bottom-1 title-colour-blue">DWP interaction goals</h2>
+        <div>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>To apply for benefits before/soon after leaving prison so he has money to live off</li>
+
+          </ul>
+
+        </div>
+
+        <h2 id="contents" class="govuk-heading-m govuk-!-margin-top-6 govuk-!-margin-bottom-1 title-colour-blue">Online
+          access</h2>
+        <div>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Communual computer in prison </li>
+            <li>Very restricted access</li>
+            <li>Limited hours</li>
+            <li>Outside prison - no access to computer or mobile</li>
+          </ul>
+
+        </div>
+
+        <h2 id="contents" class="govuk-heading-m govuk-!-margin-top-6 govuk-!-margin-bottom-1 title-colour-blue">ID
+          documents
+        </h2>
+        <div>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Dormant bank account</li>
+            <li>Passport (but doesn't have access, validity unknown)</li>
+            <li>Driver's licence (but doesn't have access)</li>
+            <li>Prison records?</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--right column content-->
+      <div class="govuk-grid-column-one-half">
+
+
+        <h2 id="contents" class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-1 title-colour-blue">Needs
+        </h2>
+        <div>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>To be able to take his time</li>
+            <li>To be able to complete tasks over multiple online visits</li>
+            <li>Explanations / support when interacting online with DWP</li>
+            <li>Reassurance he's doing things right</li>
+            <li>To know what he needs to do and progress</li>
+            <li>Minimal stress / hassle with online DWP interactions</li>
+          </ul>
+
+        </div>
+
+        <h2 id="contents" class="govuk-heading-m govuk-!-margin-top-6 govuk-!-margin-bottom-1 title-colour-blue">Pain
+          points
+          and barriers</h2>
+        <div>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Not understanding what he is being asked</li>
+            <li>Feels he's being bounced around by the system</li>
+            <li>Low confidence completing admin alone</li>
+            <li>Has ID documents but not with him</li>
+            <li>Limited online access in prison</li>
+            <li>No online access outside prison</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <details class="govuk-details govuk-!margin-top-6" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          More details
+        </span>
+      </summary>
+
+      <div class="govuk-details__text">
+        <p>Dominic is coming to the end of his second term in prison. He’s 32 and has been in prison, in Armley, for
+          nearly 4 years. After his first spell in prison, he applied for Universal Credit. He remembers the stress of
+          being released last time; everything he had to line up in that first week, and it was still ages until his
+          money came through. It seemed like such a hassle that he started dealing straight away. Within a year, he was
+          in prison again.
+        </p>
+
+        <h2 id="Devices-and-technology" class="govuk-heading-l govuk-!-margin-top-7">Devices and technology</h2>
+        <p class="govuk-body">
+          Dominic doesn’t have a phone or a laptop at the moment. He wants to sort out a phone when he gets out, but at
+          the moment he only has access to a computer during certain hours of the day. It very restricted, and most of
+          the time he doesn’t bother trying to use it. He recently applied for UC with a support worker inside the
+          prison. During the application, she asked him questions and typed everything in for him. He wouldn’t feel
+          confident doing the form himself and gets frustrated when he doesn’t understand how he’s supposed to answer.
+        </p>
+
+
+
+        <h2 id="Goals-and-wishes" class="govuk-heading-l govuk-!-margin-top-7">Goals and wishes</h2>
+        <p class="govuk-body">
+          Dominic isn’t sure what he wants to do when he gets out. He’s going to have to live with his mum for a while
+          and knows that she’ll be on his case about getting a job. He’s moving out of Leeds to live with her and hopes
+          that it will help him avoid the people he used to hang around with.
+          <br><br>
+          He’s sick of being locked up, and feels like he’s had a run of bad luck which has cost him a lot of years. He
+          doesn’t want to get into drugs again, it’s too risky. He learnt a bit of bricklaying in prison. Hopefully it
+          will lead to work, but he doesn’t know where to begin.
+        </p>
+
+
+        <h2 id="Frustrations" class="govuk-heading-l govuk-!-margin-top-7">Frustrations</h2>
+        <p class="govuk-body">
+          Dominic knows that it is going to be hard when he’s released. He’s got a lot to do and he hates admin and the
+          feeling that he’s being bounced around by the system. He thinks he’s calmed down a bit, but can still kick off
+          when he feels messed about. He thinks that the safest thing for him is to take things slowly, and try not to
+          do too much, too soon.
+          <br><br>
+          His key worker in the prison has said that he might not need to go to the jobcentre when he’s released,
+          because of coronavirus. His benefits still feel a bit vague. He knows that the application isn’t finished yet,
+          but doesn’t know what he will have to do to make sure the money comes in.
+          <br><br>
+          He might have to go to a jobcentre near his mum’s, in Redcar. He hasn’t been there before. He’s got a bank
+          account, but hasn’t used it in ages. He’s got a passport and driving licence. They are probably at his mum’s
+          house, but he doesn’t know if they are still in date.
+        </p>
+
+
+
+        <h2 id="Making-things-better-for" class="govuk-heading-l govuk-!-margin-top-7">Making things better for Dominic
+        </h2>
+        <p class="govuk-body">
+
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Issue</th>
+              <th scope="col" class="govuk-table__header">What to do</th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Dominic is in prison. He doesn’t have access to personal documents which he
+                may be able to use during an online IDV journey.</td>
+              <td class="govuk-table__cell">Understand all of the options that may allow Dominic’s ID to be confirmed
+                before he is released, possibly drawing on prison documentation. </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Dominic knows that the first week on release is going to be difficult and
+                stressful. He doesn’t want his first week on release to be highly pressured</td>
+              <td class="govuk-table__cell">Connect with the <a
+                  href=https://www.gov.uk/government/publications/prison-leavers-project-improving-outcomes-for-prison-leavers>Prison
+                  Leavers Project</a> to understand the contact points that Dominic is likely to have in his first week,
+                and understand the ways in which DWP identity services can help to reduce unnecessary contact. </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Dominic already has support in prison, but they are currently unable to help
+                him through his whole UC application. </td>
+              <td class="govuk-table__cell">Explore options to move the entire UC claim online, and how ID verification
+                services can contribute to this. </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Dominic doesn’t have access to a smart phone or laptop outside prison.</td>
+              <td class="govuk-table__cell">Connect online and offline journeys, combining online application and
+                offline support to ensure an end-to-end journey which can respond to user-needs in different phases of
+                their claim and maintenance of claim. </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Dominic has been in the prison system for the long time, and the burden is
+                still on him to prove his identity.</td>
+              <td class="govuk-table__cell">Explore options to utilise documents and data for IDV. Including data held
+                through the conviction and sentencing lifecycle.</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+
+        </p>
+
+      </div>
+
+
+
+    </details>
+
+    <div data-sticky-element class="sticky-element">
+      <a class="govuk-link app-c-back-to-top dont-print" href="#main-content">
+        <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17"
+          viewbox="0 0 13 17">
+          <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+        </svg>
+        Back to top
+      </a>
+    </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

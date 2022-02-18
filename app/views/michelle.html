@@ -1,0 +1,246 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Michelle: Gypsy / Traveller
+{% endblock %}
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="/" class="govuk-back-link govuk-!-margin-bottom-0 govuk-!-margin-top-0">Back</a>
+
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+
+    <h1 class="govuk-panel__title title-colour-green govuk-!-margin-bottom-4 govuk-!-margin-top-0">
+      Michelle: Gypsy / Traveller
+    </h1>
+
+    <div class="govuk-grid-row">
+
+      <!--image-->
+      <div class="govuk-grid-column-one-third">
+        <img src="{{ asset_path }}images/Michelle.jpg" alt="">
+      </div>
+
+      <!--intro-->
+      <div class="govuk-grid-column-one-third">
+        <p class="persona-intro govuk-!-margin-top-4">"My family were part of the traveller community in Cheshire where
+          I went to school, until my dad got seriously ill and we move into a council house.
+          <br><br>When his condition got worse he started claiming PIP and I started caring for him full time.
+          I've heard Carer's Allowance is something I can apply for to help with the cost of looking after him."
+        </p>
+      </div>
+      <!--slider-->
+
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-!-margin-top-5">
+          <img src="{{ asset_path }}images/Michelle-summary.jpg"
+            alt="Sliders showing that for Michelle, there are no ID documents while online help and advice needs and online access are at the lower end of the scale and Government records includes Education records"
+            width="300" height="200">
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="govuk-grid-row">
+      <!--left column content-->
+      <div class="govuk-grid-column-one-half govuk-!-margin-top-4">
+        <h2 id="contents" class="govuk-heading-m govuk-!-margin-bottom-1 title-colour-green">DWP interaction goals</h2>
+        <div>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Learn about Carer's Allowance and how to apply for it</li>
+
+          </ul>
+
+        </div>
+
+        <h2 id="contents" class="govuk-heading-m govuk-!-margin-top-6 govuk-!-margin-bottom-1 title-colour-green">Online
+          access</h2>
+        <div>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Public computer at the library</li>
+            <li>Limited time slots</li>
+            <li>No computer or wifi at home</li>
+            <li>No mobile data</li>
+          </ul>
+
+        </div>
+
+        <h2 id="contents" class="govuk-heading-m govuk-!-margin-top-6 govuk-!-margin-bottom-1 title-colour-green">ID
+          documents
+        </h2>
+        <div>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>None</li>
+            <li>No DWP record of her</li>
+            <li>Education records?</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--right column content-->
+      <div class="govuk-grid-column-one-half">
+
+
+        <h2 id="contents" class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-1 title-colour-green">Needs
+        </h2>
+        <div>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>To be able to complete tasks without formal ID</li>
+            <li>To understand what is involved in applying</li>
+            <li>To be able to complete tasks over multiple online visits</li>
+            <li>Preference for interactions to involve a person</li>
+            <li>To know what she needs in advance</li>
+          </ul>
+        </div>
+
+        <h2 id="contents" class="govuk-heading-m govuk-!-margin-top-6 govuk-!-margin-bottom-1 title-colour-green">Pain
+          points
+          and barriers</h2>
+        <div>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>More difficult to do some tasks online</li>
+            <li>Limited time slots on public computer</li>
+            <li>No ID documents</li>
+            <li>No DWP footprint</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <details class="govuk-details govuk-!margin-top-6" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          More details
+        </span>
+      </summary>
+
+      <div class="govuk-details__text">
+        <p>Michelle lives with her family in a house owned by the council, but a few years ago they had a very different
+          way of life. They lived in a caravan and travelled around a lot, mostly in Cheshire, where she went to school.
+          Then her dad got seriously ill and they had to settle on a council-owned site. Eventually, someone from the
+          council helped them to get on the waiting list, and they eventually got somewhere, in part due to her father’s
+          ill health.
+          <br><br>
+          Michelle used to work as a childminder, looking after children from some of the families in her community. But
+          when her dad’s condition got worse, she decided to start caring for him full time. After he had an assessment,
+          he started claiming PIP in 2015.
+        </p>
+
+        <h2 id="Devices-and-technology" class="govuk-heading-l govuk-!-margin-top-7">Devices and technology</h2>
+        <p class="govuk-body">
+          Michelle and her family don’t own a computer. They have an old smartphone that the whole house – and even some
+          of their neighbours – share. But it tends to stay in a drawer until someone needs it. It doesn’t often have
+          enough credit to make a call.
+          <br><br>
+          If Michelle needs to go on the internet, she’ll use one of the computers at her local library. She uses email
+          and social media to keep in touch with people, but she’s not particularly active online.
+
+        </p>
+
+
+
+        <h2 id="Goals-and-wishes" class="govuk-heading-l govuk-!-margin-top-7">Goals and wishes</h2>
+        <p class="govuk-body">
+          Michelle would like to claim some money to help her with the cost of looking after her dad. Someone she grew
+          up
+          with has told her about something called Carer’s Allowance and offered to help her apply. She’s got no idea
+          what
+          she’ll need to do or how much she might get. But she’s booked one of the library computers to try to find out
+          a
+          bit more information online.
+        </p>
+
+
+        <h2 id="Frustrations" class="govuk-heading-l govuk-!-margin-top-7">Frustrations</h2>
+        <p class="govuk-body">
+          Michelle is frustrated with the way everything’s going online. She’s completely comfortable using a computer,
+          but it can be harder for her to do certain things on the internet than face to face.
+          <br><br>
+          She’s never left the country so she doesn’t have a passport and she’s only ever been paid cash in hand. That
+          can
+          make things harder if she needs to do something “official” and there’s no record of her.
+          <br><br>
+          In contrast, she’s used a helpline to get information about her dad’s PIP money and gone into the council
+          office
+          to speak to them about their housing benefit. They just asked her some questions about her family to make sure
+          they were dealing with the right person. That seemed a lot easier.
+        </p>
+
+
+
+        <h2 id="Making-things-better-for" class="govuk-heading-l govuk-!-margin-top-7">Making things better for Michelle
+        </h2>
+        <p class="govuk-body">
+
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Issue</th>
+              <th scope="col" class="govuk-table__header">What to do</th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Lack of identity documentation may make it difficult for Michelle to
+                complete
+                an online service, for example when applying for Carer’s Allowance</td>
+              <td class="govuk-table__cell">Carry out more UR with the cohort to understand their identity requirements
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Michelle doesn’t have a computer at home and can only go online for limited
+                periods at her library</td>
+              <td class="govuk-table__cell">Design offline processes into services where necessary</td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">She may have difficulty proving her dad has allowed her to help manage his
+                PIP
+                claim</td>
+              <td class="govuk-table__cell">Provide clear processes to allow people to manage claims on behalf of others
+                where they have the authority</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        </p>
+      </div>
+
+    </details>
+
+    <div data-sticky-element class="sticky-element">
+      <a class="govuk-link app-c-back-to-top dont-print" href="#main-content">
+        <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17"
+          viewbox="0 0 13 17">
+          <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+        </svg>
+        Back to top
+      </a>
+    </div>
+
+
+  </main>
+</div>
+
+
+{% endblock %}
